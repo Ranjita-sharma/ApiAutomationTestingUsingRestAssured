@@ -1,0 +1,20 @@
+package api.configs;
+
+public enum LoanApplicationStatus {
+    IN_COMPLETED,
+    UNDER_REVIEW,
+    PROPOSAL_SENT,
+    PROPOSAL_APPROVED,
+    PROPOSAL_REJECTED,
+    LOAN_APPROVED,
+    CONTRACT_ACCEPTED,
+    LOAN_SCHEDULED,
+    PUBLISHED,
+    PARTIALLY_FUNDED,
+    FUNDED,
+    DISBURSED,
+    UNDER_REPAYMENT,
+    COMPLETED,
+    DELAYED,
+    REJECTED
+}

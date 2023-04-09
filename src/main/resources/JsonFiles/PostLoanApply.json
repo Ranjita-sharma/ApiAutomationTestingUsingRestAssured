@@ -1,0 +1,35 @@
+{
+  "requestedLoanAmount": 100000,
+  "requestDuration": "180",
+  "productId": 1,
+  "invoiceDate": "2021-12-30T18:13:42.327Z",
+  "buyerName": "Tester",
+  "purposeOfUsage": "WORKING_CAPITAL_FINANCE",
+  "borrowerId": "9131",
+  "invoiceDocument": "",
+  "invoiceDocumentUrl": "",
+  "deliveryNoteDocument": "",
+  "deliveryNoteDocumentUrl": "",
+  "contractDocument": "",
+  "contractDocumentUrl": "",
+  "documentReqDTOList": [
+    {
+      "documentType": "CONTRACT_DOCUMENT",
+      "fileList": [
+        
+      ]
+    },
+    {
+      "documentType": "INVOICE",
+      "fileList": [
+        
+      ]
+    },
+    {
+      "documentType": "DELIVERY_DOCUMENT",
+      "fileList": [
+        
+      ]
+    }
+  ]
+}

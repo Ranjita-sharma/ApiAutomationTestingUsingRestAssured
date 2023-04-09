@@ -1,0 +1,22 @@
+{
+"approvedInterestRatePct": 9.1,
+"approvedLoanAmount": 100000,
+"approvedLoanDuration": 30,
+"buyerName": "test",
+"collectionFeesPct": 0,
+"collectionMechanism": "BANK_TRANSFER",
+"creditTeamComments": "dfdffd",
+"financingStructure": "TAWARROUQ",
+"gauranteeOthers": [],
+"managementFeesPct": 0.5,
+"otherFeeFxd": 33,
+"publishDateTime": "2021-12-29T11:31:50",
+"purposeOfLoan": "Working Capital Financing",
+"purposeOfUsage": "WORKING_CAPITAL_FINANCE",
+"repaymentType": "BULLET_PAYMENT",
+"riskRate": "A",
+"rmComments": "fdfdfd",
+"successFeesPct": 20,
+"ticketSize": 333,
+"vatOnManagementFeesPct": 15
+}

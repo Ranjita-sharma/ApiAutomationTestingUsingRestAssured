@@ -1,0 +1,17 @@
+{
+  "documentReqDTOList": [
+    {
+      "loanId": "1136",
+      "documentType": "DELIVERY_DOCUMENT",
+      "fileList": [
+        {
+          "documentName": "deliveryNotes",
+          "documentUrl": "deliveryNotes_URL.",
+          "documentSize": 0.0022144317626953125
+        }
+      ]
+    }
+  ],
+  "borrowerId": "8281",
+  "loanId": "1136"
+}

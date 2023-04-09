@@ -1,0 +1,17 @@
+{
+  "documentReqDTOList": [
+    {
+      "loanId": "1127",
+      "documentType": "INVOICE",
+      "fileList": [
+        {
+          "documentName": "invoice_16449213159p88a",
+          "documentUrl": "invoice_1644910476bn5co_1644910476049.",
+          "documentSize": 0.15495014190673828
+        }
+      ]
+    }
+  ],
+  "borrowerId": "9380",
+  "loanId": "1127"
+}
