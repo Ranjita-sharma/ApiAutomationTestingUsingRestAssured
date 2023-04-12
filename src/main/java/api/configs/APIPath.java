@@ -4,7 +4,7 @@ public class APIPath {
 
 	public static final class apiPath {
 		//***************************Admin details including URL,query params***********************
-		public static final String AdminBaseURL = "http://stg.adminbff.newlendo.com";
+		public static final String AdminBaseURL = "http://admin-ui-stage.swifty.ltd/";
 		public static final String Admin_queryParamEmail = "admin@gmail.com";
 		public static final String AdminCreateLoanProposal= "api/v1/auth/loan-proposal";
 		public static final String AdminAddGaurantees= "/api/v1/admin/loan-application/add_update_loan_gaurantee";
@@ -39,7 +39,7 @@ public class APIPath {
 		public static final String AdminGetAdditionalManagerAndOwnerInfo = "/api/v1/admin/enterprise/getAdditionalManagerAndOwner-investor";
 		public static final String AdminGetInvestmentTerms = "/api/v1/Corporate/getInvestmentTerms";
 		// Base URL,query params
-		public static final String BaseURL = "http://stg.consumerbff.newlendo.com";
+		public static final String BaseURL = "http://consumer-bff-stage.swifty.ltd";
 		public static final String BaseURL_dev = "http://consumer-client-dev.newlendo.com/";
 		public static final String Investor_queryParamEmail = "tah16@gmail.com";
 		public static final String QueryParamPWD = "Test@123";

@@ -6,8 +6,10 @@ import com.pojo.request.loginPojo.loginOTP;
 import com.pojo.request.loginPojo.loginPojo;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
+import org.testng.annotations.Test;
 
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Vector;
 
 import static api.configs.APIPath.apiPath.*;
@@ -56,9 +58,10 @@ public class LoginTest extends BaseTest {
 //		vector.add(userId);
 		return map;
 	}
+
 	public static HashMap<String,Object> test_InvestorLogin(){
 		loginPojo login_pojo = new loginPojo();
-		login_pojo.setEmail("nada@gmail.com");
+		login_pojo.setEmail("siraj@test.com");
 		login_pojo.setPassword("Test@123");
 
 		Response investor_login = RestAssured.given()
@@ -154,5 +157,15 @@ public class LoginTest extends BaseTest {
 		vector.add(userId);
 		vector.add(phoneNumber);
 		return (vector);
+	}
+	@Test
+	public void testInvestorLogin(){
+		//Map<String,Object> hash = test_InvestorLogin();
+		Map<String,Object> getUser_Token_Id = test_InvestorLogin();
+		getUser_Token_Id.get("userId");
+		getUser_Token_Id.get("token");
+		int userId = (int) getUser_Token_Id.get("userId");
+		String token = (String)getUser_Token_Id.get("token") ;
+		System.out.println("user id is"+userId);
 	}
 }

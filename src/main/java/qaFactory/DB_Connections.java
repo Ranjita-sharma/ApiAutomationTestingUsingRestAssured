@@ -5,16 +5,16 @@ import org.testng.annotations.Test;
 
 import java.security.Signature;
 import java.sql.*;
-import
+
 
 public  class DB_Connections {
-    int userId = 0;
+    static int userId = 0;
     @Test
     public void DB() throws SQLException {
 
        // int  userId = 10148;
         String userEmail = "ranjeeta@lendo.sa";
-        Connection con = connect_to_db("stg_user_service", "dblenadmin", "lendbk3s");
+        Connection con = connect_to_db("stg_user_service", "Ranjeeta", "LK34DJ#LIU$Te32874%*@3");
         ResultSet rs = read_data( con, userEmail);
         System.out.println("Result id : "+ rs.getInt("id"));
         System.out.println("Result email : "+ rs.getString("email"));
@@ -34,33 +34,33 @@ public  class DB_Connections {
         }
 
     }
-    public static void DB_BorrowerProfileCreation() throws SQLException {
-
-        int userId = 0;
-        // int  userId = 10148;
-        String userEmail = "ranjeeta@lendo.sa";
-        Connection con = connect_to_db("stg_user_service", "dblenadmin", "lendbk3s");
-        ResultSet rs = read_data( con, userEmail);
-        System.out.println("Result id : "+ rs.getInt("id"));
-        System.out.println("Result email : "+ rs.getString("email"));
-        if (rs.getString("email") .equals(userEmail)   ) {
-            update_user_data(con,userEmail);
-            update_investor_data(con,userId);
-            update_borrower_data(con,userId);
-            //  get_otp(con);
-            //   update_email_verification(con);
-            String query2 = String.format("Select * from Users where id =" +userId );
-            Statement statement = con.createStatement();
-            rs = statement.executeQuery(query2);
-            System.out.println("rs "+ rs);
-
-        } else {
-            System.out.println("Email is not exist");
-            SignUpTest.test_BorrowerProfileCreation();
-
-        }
-
-    }
+//    public static void DB_BorrowerProfileCreation() throws SQLException {
+//
+//        int userId = 0;
+//        // int  userId = 10148;
+//        String userEmail = "ranjeeta@lendo.sa";
+//        Connection con = connect_to_db("stg_user_service", "dblenadmin", "lendbk3s");
+//        ResultSet rs = read_data( con, userEmail);
+//        System.out.println("Result id : "+ rs.getInt("id"));
+//        System.out.println("Result email : "+ rs.getString("email"));
+//        if (rs.getString("email") .equals(userEmail)   ) {
+//            update_user_data(con,userEmail);
+//            update_investor_data(con,userId);
+//            update_borrower_data(con,userId);
+//            //  get_otp(con);
+//            //   update_email_verification(con);
+//            String query2 = String.format("Select * from Users where id =" +userId );
+//            Statement statement = con.createStatement();
+//            rs = statement.executeQuery(query2);
+//            System.out.println("rs "+ rs);
+//
+//        } else {
+//            System.out.println("Email is not exist");
+//            SignUpTest.test_BorrowerProfileCreation();
+//
+//        }
+//
+//    }
 
     //    public void DB_ForNewSignup() throws SQLException {
 //        test_createResidentInvestorProfile signUpTest = SignUpTest.

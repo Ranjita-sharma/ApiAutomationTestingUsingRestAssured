@@ -1239,7 +1239,7 @@ public class CompleteLoanCreationFlow extends BaseTest {
         test.log(LogStatus.INFO, "Test is ended...");
         return loanid;
     }
-
+@Test
     public static void GetStaticData() {
         Response getStaticData = RestAssured.given().log().all().baseUri(APIPath.apiPath.BaseURL).log().all().when()
                 .get(APIPath.apiPath.GetStaticData)
